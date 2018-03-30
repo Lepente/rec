@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Job</title>
+  </head>
+  <body>
+    <header>
+<div class="container">
+
+  <nav class="site-nav">
+      <ul>
+        <li><a href=""><i class="fa fa-home site-nav--icon"></i><h2>About</h2></a></li>
+        <li><a href=""><i class="fa fa-info site-nav--icon"></i><h2>Jobs</h2></a></li>
+        <li><a href=""><i class="fa fa-pencil site-nav--icon"></i><h2>Contact</h2></a></li>
+        <li class="language">
+                  <div class="dropdown">
+          <a class="dropbtn"><h2>English</h2></a>
+          <div class="dropdown-content">
+            <a href="#"><h2>Deutsch</h2></a>
+            <a href="#"><h2>Hungarian</h2></a>
+            <a href="#"><h2>Romanian</h2></a>
+          </div>
+        </div>
+        </li>
+      </ul>
+  </nav>
+
+  <div class="menu-toggle">
+    <div class="hamburger"></div>
+  </div>
+
+</div>
+
+</header>
+    <div class="overlay"></div>
+    <div class="title">
+    <div class="headline"><h1>Your way to<br>working</h1></div>
+  </div>
+    <div class="header">
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script>
+  $(document).ready(function(){
+
+      window.sr = ScrollReveal({
+        reset:false
+      });
+
+      sr.reveal('.headline', {
+        duration: 1000,
+        origin: 'top',
+        scale: 1,
+        mobile: true,
+      });
+      sr.reveal('.navbar', {
+        duration: 1000,
+        origin: 'right',
+        scale: 1,
+        distance: '10px',
+        easing: 'cubic-bezier(0.6, 0.2, 0.1, 1)',
+        mobile: true,
+      });
+
+      $('.menu-toggle').click(function() {
+
+  $('.site-nav').toggleClass('site-nav--open', 500);
+  $(this).toggleClass('open');
+
+})
+
+    });
+  </script>
+  <script
+    src="https://code.jquery.com/jquery-3.2.1.js"
+    integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+    crossorigin="anonymous"></script>
+  </body>
+</html>
