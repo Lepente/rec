@@ -29,20 +29,23 @@
       </ul>
   </nav>
 
-  <div class="menu-toggle">
-    <div class="hamburger"></div>
-  </div>
+      <div class="menu-toggle">
+        <div class="hamburger"></div>
+      </div>
 
-</div>
-
-</header>
-    <div class="overlay"></div>
-    <div class="title">
-    <div class="headline"><h1>Your way to<br>working</h1></div>
-  </div>
-    <div class="header">
     </div>
 
+  </header>
+    <div class="overlay"></div>
+    <div class="title">
+      <div class="headline"><h1>Your way to<br>working</h1></div>
+      <div class="head2">
+        <span>Do you want to work in Germany?</span><br>
+        <span>We help you do it!</span>
+      </div>
+    </div>
+    <div class="header">
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script>
@@ -56,13 +59,23 @@
         duration: 1000,
         origin: 'top',
         scale: 1,
+        distance: '100px',
         mobile: true,
       });
-      sr.reveal('.navbar', {
+
+      sr.reveal('.head2', {
         duration: 1000,
-        origin: 'right',
+        origin: 'bottom',
+        distance: '100px',
         scale: 1,
-        distance: '10px',
+        mobile: true,
+      });
+
+      sr.reveal('.container', {
+        duration: 1000,
+        origin: 'top',
+        scale: 1,
+        distance: '100px',
         easing: 'cubic-bezier(0.6, 0.2, 0.1, 1)',
         mobile: true,
       });
