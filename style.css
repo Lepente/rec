@@ -240,7 +240,7 @@ h2 {
 .header {
   display: grid;
   position: absolute;
-  background: url("images/back2.jpg");
+  background: url("images/back2.png");
   background-position: center center;
   background-size: cover;
   height: 100vh;
