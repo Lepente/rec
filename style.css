@@ -303,6 +303,7 @@ h2 {
   width: 100%;
   display: grid;
   justify-items: center;
+  text-align: center;
 }
 
 .heading {
@@ -325,11 +326,19 @@ h2 {
   .head2 {
     font-size: 24px;
   }
+
+  .text-wrapper {
+    grid-template-columns: 0.5fr 6fr 0.5fr;
+  }
 }
 
 @media (max-width:575px) {
   .headline {
     font-size: 25px;
+  }
+
+  .text {
+    font-size: 22px;
   }
 
   .title {
