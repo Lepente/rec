@@ -44,7 +44,17 @@
         <span>We help you do it!</span>
       </div>
     </div>
-    <div class="header">
+    <div class="landing">
+    </div>
+
+    <div class="text-wrapper">
+      <div class="heading">About us</div>
+      <div class="text">Apply for well paid jobs with free flat.</div>
+    </div>
+
+    <div class="text-wrapper">
+      <div class="heading">In association with</div>
+      <div class="text"></div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -54,7 +64,7 @@
       window.sr = ScrollReveal({
         reset:false
       });
-
+ 
       sr.reveal('.headline', {
         duration: 1000,
         origin: 'top',
@@ -80,19 +90,21 @@
         mobile: true,
       });
 
-      sr.reveal('.header', {
+      sr.reveal('.heading', {
         duration: 1000,
-        scale: 1,
-        opacity: 0.1,
         origin: 'top',
+        scale: 1,
+        distance: '10px',
+        easing: 'cubic-bezier(0.6, 0.2, 0.1, 1)',
         mobile: true,
       });
 
-      sr.reveal('.overlay', {
+      sr.reveal('.text', {
         duration: 1000,
-        scale: 1,
-        opacity: 0.1,
         origin: 'top',
+        scale: 1,
+        distance: '10px',
+        easing: 'cubic-bezier(0.6, 0.2, 0.1, 1)',
         mobile: true,
       });
 
